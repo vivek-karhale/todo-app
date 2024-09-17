@@ -9,12 +9,12 @@ export interface Todo {
   completed: boolean;
 }
 
-export const fetchToDoList = async (page: number, limit : number) => {
+export const fetchToDoListByPage = async (page: number = 1, limit : number = 10) => {
   try {
-    console.log(`${API_URL}?_page=${page}&_limit=${limit}`)
     const response = await  axios.get<Todo[]>(`${API_URL}?_page=${page}&_limit=${limit}`);
     return response.data;
   } catch (error) {
-    throw new Error('Network error');
+    const message = error instanceof Error ? error.message : 'Unknown error occurred';
+    throw new Error(`Error fetching todo list: ${message}`);
   }
 };

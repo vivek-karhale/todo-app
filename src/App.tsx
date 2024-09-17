@@ -1,14 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import ToDoList from './components/ToDoList';
+import { Container, CssBaseline, Typography } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 function App() {
   return (
-    <div className="App">
-      <h1>To Do List</h1>
-      <ToDoList />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container >
+        <CssBaseline />
+        <Typography variant="h4" align="center" gutterBottom marginTop={4}>
+          Todo List
+        </Typography>
+        <ToDoList />
+      </Container>
+    </ThemeProvider> 
   );
 }
 
