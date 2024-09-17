@@ -65,10 +65,10 @@ const ToDoList = () => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell style={{ fontWeight: 'bold', textAlign: 'center' }}>ID</TableCell>
-            <TableCell style={{ fontWeight: 'bold', textAlign: 'center' }}>User ID</TableCell>
-            <TableCell style={{ fontWeight: 'bold', textAlign: 'center' }}>Title</TableCell>
-            <TableCell style={{ fontWeight: 'bold', textAlign: 'center' }}>Completed</TableCell>
+            <TableCell style={{ fontSize: '18px', fontWeight: 'bold', textAlign: 'center' }}>ID</TableCell>
+            <TableCell style={{ fontSize: '18px', fontWeight: 'bold', textAlign: 'center' }}>User ID</TableCell>
+            <TableCell style={{ fontSize: '18px', fontWeight: 'bold', textAlign: 'center' }}>Title</TableCell>
+            <TableCell style={{ fontSize: '18px', fontWeight: 'bold', textAlign: 'center' }}>Completed</TableCell>
           </TableRow>
         </TableHead>
         <TableBody >
@@ -81,10 +81,10 @@ const ToDoList = () => {
           ) : (
             items.map(task => (
               <TableRow key={task.id} >
-                <TableCell style={{ textAlign: 'center' }}>{task.id}</TableCell>
-                <TableCell style={{ textAlign: 'center' }}>{task.userId}</TableCell>
-                <TableCell>{task.title}</TableCell>
-                <TableCell style={{ textAlign: 'center' }}>{task.completed ? 'Yes' : 'No'}</TableCell>
+                <TableCell style={{ fontSize: '16px', textAlign: 'center' }}>{task.id}</TableCell>
+                <TableCell style={{ fontSize: '16px', textAlign: 'center' }}>{task.userId}</TableCell>
+                <TableCell style={{ fontSize: '16px' }}>{task.title}</TableCell>
+                <TableCell style={{ fontSize: '16px', textAlign: 'center' }}>{task.completed ? 'Yes' : 'No'}</TableCell>
               </TableRow>
             ))
           )}
