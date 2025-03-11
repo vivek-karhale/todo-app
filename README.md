@@ -12,7 +12,7 @@ This is a React application that fetches and displays a list of TODOs in a pagin
 
 ## Live Demo
 
-You can view the live demo of this application [here](https://kvivek2109.github.io/todo-app/).
+You can view the live demo of this application [here](https://vivek-karhale.github.io/todo-app/).
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ You can view the live demo of this application [here](https://kvivek2109.github.
 # Getting Started
 
 Clone the repository:
-### `git clone https://github.com/Kvivek2109/todo-app.git`
+### `git clone https://github.com/vivek-karhale/todo-app.git`
 
 Navigate to the project directory:
 ### `cd todo-app`
